@@ -1,0 +1,19 @@
+body
+{
+    background-color: gray;
+    color: #F6F6F6;
+}
+
+strong
+{
+    color: darkorange;
+}
+
+a
+{
+    color: white;
+    border: 1px solid darkorange;
+    padding: 10px;
+    background-color: black;
+    text-decoration: none;
+}
