@@ -63,12 +63,13 @@ body
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .container__content
 {
     display: flex;
-    width: 615px;
+    width: 50%;
     height: auto;
     flex-direction: column;
     gap: 40px;
@@ -105,7 +106,7 @@ body
 .link
 {
     display: flex;
-    width: 378px;
+    width: 50%;
     font-weight: 600;
     text-decoration: none;
     color: var(--cor-texto);
@@ -118,6 +119,11 @@ body
     align-items: center;
     justify-content: space-evenly;
     cursor: pointer;
+}
+
+.imagem-gustavo
+{
+    width: 50%;
 }
 
 .link:hover
@@ -137,4 +143,12 @@ body
     align-items: center;
     font-family: var(--fonte-secundaria);
     font-size: 1.5rem;
+}
+
+@media (max-width: 1200px)
+{
+    .container
+    {
+        flex-direction: column-reverse;
+    }
 }
