@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&family=Montserrat:wght@400;600&=swap');
 
+:root
+{
+    --cor-principal: #000000;
+    --cor-secundaria: red;
+    --cor-animacao-botao: rgba(255, 0, 0, 0.226);
+    --cor-animacao-titulo: white;
+    --cor-texto: #F6F6F6;
+
+    --fonte-principal: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
 *
 {
     margin: 0;
@@ -9,16 +21,16 @@
 body
 {
     box-sizing: border-box;
-    background-color: #000000;
-    color: #F6F6F6;
+    background-color: var(--cor-principal);
+    color: var(--cor-texto);
 }
 
 .header 
 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-secundaria);
     font-size: 24px;
     font-weight: 600;
-    color: red;
+    color: var(--cor-secundaria);
     text-decoration: none;
     padding: 2% 0 0 15%;
 }
@@ -31,18 +43,18 @@ body
 
 .header__nav__link
 {
-    color:red;
+    color: var(--cor-secundaria);
     text-decoration: none;
 }
 
 .header__nav__link:hover
 {
-    color: white;
+    color: var(--cor-animacao-titulo);
 }
 
 .titulo-destaque
 {
-    color: red;
+    color: var(--cor-secundaria);
 }
 
 .container
@@ -64,13 +76,13 @@ body
 
 .content__title
 {
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--fonte-principal);
     font-size: 36px;
 }
 
 .content__text
 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-secundaria);
     font-size: 24px;
 }
 
@@ -85,7 +97,7 @@ body
 
 .content__links__title
 {
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--fonte-principal);
     font-weight: 400;
     font-size: 24px;
 }
@@ -96,13 +108,13 @@ body
     width: 378px;
     font-weight: 600;
     text-decoration: none;
-    color: #F6F6F6;
+    color: var(--cor-texto);
     text-align: center;
     padding: 21.5px 0;
-    border: 2px solid red;
+    border: 2px solid var(--cor-secundaria);
     border-radius: 8px;
     font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-secundaria);
     align-items: center;
     justify-content: space-evenly;
     cursor: pointer;
@@ -110,19 +122,19 @@ body
 
 .link:hover
 {
-    background-color: rgba(255, 0, 0, 0.226);
+    background-color: var(--cor-animacao-botao);
 }
 
 .footer
 {
     display: flex;
-    color: #000000;
-    background-color: red;
+    color: var(--cor-principal);
+    background-color: var(--cor-secundaria);
     width: 100%;
     height: auto;
     padding: 24px;
     flex-direction: column;
     align-items: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-secundaria);
     font-size: 24px;
 }
