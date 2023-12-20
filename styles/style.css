@@ -25,7 +25,7 @@ body
     color: var(--cor-texto);
 }
 
-.header 
+.header
 {
     font-family: var(--fonte-secundaria);
     font-size: 1.5rem;
@@ -123,7 +123,7 @@ body
 
 .imagem-gustavo
 {
-    width: 50%;
+    width: 20%;
 }
 
 .link:hover
@@ -147,8 +147,26 @@ body
 
 @media (max-width: 1200px)
 {
+
+    .header
+    {
+        padding: 5%;
+    }
+
+    .header__nav
+    {
+        justify-content: center;
+    }
+
     .container
     {
         flex-direction: column-reverse;
+        padding: 5%;
     }
+
+    .container__content
+    {
+        width: auto;
+    }
+
 }
